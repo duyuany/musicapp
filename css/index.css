@@ -257,7 +257,6 @@ body>.list-con{
 width: 0.24rem;
 height: 0.24rem;
 border-radius: 50%;
-background: b3b3b5;
 }
 .swiper-pagination-bullet-active {
 	background: #6966ca;
@@ -269,19 +268,19 @@ background: b3b3b5;
     /*background: #f2f2f2;*/
 }
 .swiper-slide:nth-child(1){
-    background: url(../img/003.jpg) no-repeat center;
+    background: url(../img/slide1.jpg) no-repeat center;
     background-size: cover;
 }
 .swiper-slide:nth-child(2){
-    background: url(../img/004.jpg) no-repeat center;
+    background: url(../img/slide2.jpg) no-repeat center;
     background-size: cover;
 }
 .swiper-slide:nth-child(3){
-    background: url(../img/01.jpg) no-repeat center;
+    background: url(../img/slide3.jpg) no-repeat center;
     background-size: cover;
 }
 .swiper-slide:nth-child(4){
-    background: url(../img/003.jpg) no-repeat center;
+    background: url(../img/slide4.jpg) no-repeat center;
     background-size: cover;
 }
 .swiper-slide>span{
@@ -312,12 +311,17 @@ background: b3b3b5;
 	 padding-bottom: 0.4rem;
 	 position: relative;
 }
-.item>a>img{
+.item>a{
 	display: block;
 	width: 2rem;
 	height: 2rem;
 	margin:0 auto;
 	margin-bottom: 0.15rem;
+	overflow: hidden;
+}
+
+.item>a>img{
+	width: 100%;
 }
 .item>span{
 	display: block;
@@ -413,10 +417,10 @@ background: b3b3b5;
 	width: 1.6rem;
 	height: 1.6rem;
 	float: left;
+	overflow: hidden;
 }
 .con-img>img{
 	width: 100%;
-	height: 100%;
 }
 .img-box{
 	width: 100%;
