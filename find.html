@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no, email=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="x5-orientation" content="portrait" />
 	<meta name="screen-orientation" content="portrait"> 
     <title>app</title>
@@ -13,57 +13,65 @@
     <script src="js/jquery.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
     <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/iscroll.js"></script>
 </head>
-<body>
-	<div class="header"  style="box-shadow: none;">
+<body onload="loaded()">
+	<div class="header">
 		<div class="header-item bounce iconfont">&#xe608;</div>
-		<div class="header-item"><span style="padding: 0;"><a href="my.html" style="font-weight: bold;">我的</a></span><span><a href="index.html">乐库</a></span><span><a href="find.html">发现</a></span></div>
+		<div class="header-item"><span style="padding: 0;"><a href="my.html">我的</a></span><span><a href="index.html">乐库</a></span><span  style="font-weight: bold;">发现</span></div>
 		<div class="header-item iconfont"><a href="search.html">&#xe611;</a></div>
 	</div>
-	<div class="main-con" style="margin-top: 1rem;">
-		<div class="photo-wrap">
-			<div class="photo">
-				<a href="login.html"><span>登录</span></a>
-				<a href="reg.html"><span>注册</span></a>
-			</div>
+	<div id="wrapper">
+	<div id="scroller">
+	<div class="swiper-container">
+    	<div class="swiper-wrapper">
+        	<div class="swiper-slide">
+
+        	</div>
+        	<div class="swiper-slide">
+
+        	</div>
+        	<div class="swiper-slide">
+
+        	</div>
+        	<div class="swiper-slide">
+        	</div>
+    	</div>
+    <!-- 如果需要分页器 -->
+    	<div class="swiper-pagination"></div>
+	</div>
+	<div class="main-con" style="margin-top:0">
+		<div class="img-list">
+			<img src="img/2213452054-6.jpg"/>
+			<a href="">
+					<div class="title">
+					<h1>全网最专业的格莱美预测</h1>
+					<h2>获奖预测</h2>
+				</div>
+				</a>
 		</div>
-		<div class="my-nav-wrap">
-			<div class="my-nav-top">
-				<div class="nav-list">
-					<p class="iconfont">&#xe613;</p>
-					<span>本地歌曲</span></div>
-				<div class="nav-list">
-					<p class="iconfont">&#xe605;</p>
-					<span>下载歌曲</span></div>
-				<div class="nav-list">
-					<p class="iconfont">&#xe60f;</p>
-					<span>我的最爱</span></div>
-			</div>
-			<div class="main-con" style="margin-top: 0.2rem;background: #fff;">
-				<div class="list" style="border-bottom: 1px solid  #eee;">
-					<div class="con-img" style="width: 1rem;height: 1rem;">
-						<img src="img/2123022503-0.jpg" alt="" / >
-					</div>
-					<div class="list-left">
-						<a href="show.html"><h2>默认收藏</h2></a>
-						<h3>20首</h3>			
-					</div>
-					<div class="next iconfont">&#xe607;</div>
+		<div class="img-list">
+			<img src="img/22134535N-7.jpg"/>
+			<a href="">
+					<div class="title">
+					<h1>全网最专业的格莱美预测</h1>
+					<h2>获奖预测</h2>
 				</div>
-				<div class="list">
-					<div class="con-img" style="width: 1rem;height: 1rem;">
-						<img src="img/7-16021R24231.jpg" alt="" / >
-					</div>
-					<div class="list-left">
-						<a href="show.html"><h2>新歌首发</h2></a>
-						<h3>10首</h3>			
-					</div>
-					<div class="next iconfont">&#xe607;</div>
+				</a>
+		</div>
+		<div class="img-list">
+			<img src="img/23012252H-8.jpg"/>
+			<a href="">
+					<div class="title">
+					<h1>全网最专业的格莱美预测</h1>
+					<h2>获奖预测</h2>
 				</div>
-			</div>
+				</a>
 		</div>
 	</div>
-	<div class="footer">
+		</div>
+			</div>
+		<div class="footer">
 		<div class="list" style="padding: 0;">
 			<div class="con-img " style="width: 0.8rem;height: 0.8rem;border-radius: 50%;overflow: hidden;margin-top: 0.06rem;background: url(img/0S0225110-3.jpg) no-repeat center;background-size: cover;">
 			</div>
@@ -87,5 +95,15 @@
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     })
+    
+    
+    
+    var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', { mouseWheel: true, tap: true });
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 </script>
 </html>

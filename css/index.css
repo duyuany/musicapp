@@ -525,12 +525,13 @@ float: right;
 }
 .title>h1{
 	width: 100%;color: #fff;
-	font-size: 0.3rem;text-align: center;
+	font-size: 0.34rem;text-align: center;
 	margin-top: 1.5rem;
 }
 .title>h2{
 	width: 100%;color: #fff;
-	font-size: 0.24rem;text-align: center;
+	font-size: 0.3rem;text-align: center;
+	margin-top: 0.1rem;
 }
 
 
