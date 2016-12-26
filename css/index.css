@@ -257,6 +257,7 @@ body>.list-con{
 width: 0.24rem;
 height: 0.24rem;
 border-radius: 50%;
+background: #fff
 }
 .swiper-pagination-bullet-active {
 	background: #6966ca;
@@ -546,6 +547,7 @@ float: right;
 	border-radius: 20px;
 	display: inline-block;
 	margin-top: 0.2rem;
+	color: #bfbfbf
 }
 
 
@@ -583,6 +585,13 @@ float: right;
 	position: absolute;top: 1rem;left: 0;right: 0;
 	margin: auto;
 	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.photo img{
+	position: absolute;
+	top: 0;right: 0;
+	width: 100%
 }
 .photo>a{
 	display: block;
@@ -648,7 +657,8 @@ float: right;
 /*登录*/
 .login-icon{
 	width: 2rem;height: 2rem;
-	background: #fff;
+	background: url(../img/icon.jpg) no-repeat center;
+	background-size: 130%;
 	border-radius: 0.1rem;
 	margin: auto;
 	margin-top: 1.5rem;
